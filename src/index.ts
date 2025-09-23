@@ -9,6 +9,7 @@ import categoryRouter from "./routes/category.route";
 import sectionRouter from "./routes/section.route";
 import serviceRouter from "./routes/service.route";
 import supplierRouter from "./routes/supplier.route";
+import reeceRouter from "./routes/reece.route";
 import cors from "cors";
 
 const app = express();
@@ -24,6 +25,7 @@ app.use("/categories", categoryRouter);
 app.use("/sections", sectionRouter);
 app.use("/services", serviceRouter);
 app.use("/suppliers", supplierRouter);
+app.use("/reece", reeceRouter);
 
 // CORS
 app.use(
